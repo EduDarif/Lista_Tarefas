@@ -1,0 +1,89 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    color: #333;
+    text-align: center;
+}
+
+.inputTarefa {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.botaoAdicionar, .botaoEditar, .botaoExcluir, .botaoConcluir {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.botaoAdicionar {
+    background-color: #007bff;
+}
+
+.botaoEditar, .botaoExcluir {
+    background-color: #dc3545;
+}
+
+.botaoConcluir {
+    background-color: #007bff;
+}
+
+.listaTarefa {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listaTarefa li {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ocultarConcluidas .listaTarefa li[style*="line-through"] {
+    display: none;
+}
+
+.notificacao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notificacao.visivel {
+    opacity: 1;
+}

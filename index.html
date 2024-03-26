@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Importa o arquivo CSS para estilização -->
+    <title>Lista de Tarefas</title>
+</head>
+
+<body>
+    <div class="container"> <!-- Contêiner principal -->
+        <h1 class="titulo">Lista de Tarefas - Programação Front-End</h1> <!-- Título da lista de tarefas -->
+        <div class="inputTarefa"> <!-- Div para entrada de nova tarefa -->
+            <input type="text" id="inputNovaTarefa" class="input" placeholder="Digite a nova tarefa"> <!-- Campo de entrada de nova tarefa -->
+            <button onclick="adicionarTarefa()" class="botaoAdicionar">Adicionar</button> <!-- Botão para adicionar nova tarefa -->
+        </div>
+        <div class="esconderTarefa"> <!-- Div para opção de esconder tarefas concluídas -->
+            <label for="checkboxEsconder">Ocultar tarefas concluídas:</label> <!-- Texto explicativo para a opção de ocultar tarefas -->
+            <input type="checkbox" id="checkboxEsconder" class="checkboxEsconder" onchange="esconderTarefa()"> <!-- Checkbox para ocultar tarefas -->
+        </div>
+        <ul id="listaTarefas" class="listaTarefa"></ul> <!-- Lista de tarefas -->
+    </div>
+
+    <script src="assets/js/app.js"></script> <!-- Importa o arquivo JavaScript para funcionalidades da lista de tarefas -->
+</body>
+
+</html>
