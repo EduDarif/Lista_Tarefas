@@ -1,6 +1,6 @@
 body {
     font-family: "Arial", sans-serif;
-    background-color: #f0f0f0;
+    background-color: rgb(45, 44, 44);
     margin: 0;
     padding: 0;
 }
@@ -39,16 +39,12 @@ body {
     cursor: pointer;
 }
 
-.botaoAdicionar {
+.botaoAdicionar, .botaoConcluir {
     background-color: #007bff;
 }
 
 .botaoEditar, .botaoExcluir {
     background-color: #dc3545;
-}
-
-.botaoConcluir {
-    background-color: #007bff;
 }
 
 .listaTarefa {
@@ -64,10 +60,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.ocultarConcluidas .listaTarefa li[style*="line-through"] {
-    display: none;
 }
 
 .notificacao {
